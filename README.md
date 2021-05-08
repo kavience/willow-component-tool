@@ -8,7 +8,7 @@ Tool for quickly and simply build react component
 
 install willow-component-tool
 ```bash
-npm i -g willow-tool
+npm i -g willow-component-tool
 ```
 
 init a project
