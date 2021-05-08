@@ -1,6 +1,6 @@
 {
   "name": "willow-component-tool",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tool for quickly and simply build react component",
   "main": "index.js",
   "scripts": {
