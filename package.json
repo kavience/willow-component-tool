@@ -1,22 +1,39 @@
 {
   "name": "willow-component-tool",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Tool for quickly and simply build react component",
   "main": "index.js",
   "scripts": {
+    "prepare": "husky install && husky set .husky/pre-commit 'npm run lint' && husky add .husky/pre-commit 'npm run test'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "lint-staged",
-    "husky:init": "husky install && husky set .husky/pre-commit 'npm run lint'"
+    "lint": "lint-staged"
   },
   "bin": {
     "willow-tool": "./bin/willow-tool.js"
   },
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md",
+    "package.json",
+    "LICENSE"
+  ],
   "author": "kavience",
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.1",
     "commander": "^7.2.0",
     "download-git-repo": "^3.0.2",
+    "handlebars": "^4.7.7",
+    "module-alias": "^2.2.2",
+    "inquirer": "^8.0.0",
+    "ora": "^5.4.0",
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "lint-staged": "^10.5.4",
+    "husky": "^6.0.0",
     "eslint": "^7.25.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
@@ -24,15 +41,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.23.2",
-    "handlebars": "^4.7.7",
-    "husky": "^6.0.0",
-    "inquirer": "^8.0.0",
-    "lint-staged": "^10.5.4",
-    "module-alias": "^2.2.2",
-    "ora": "^5.4.0",
-    "prettier": "^2.2.1",
-    "shelljs": "^0.8.4"
+    "eslint-plugin-react": "^7.23.2"
   },
   "lint-staged": {
     "**/*.js": [
