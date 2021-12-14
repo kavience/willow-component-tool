@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/kavience/willow-component-template/master/public/assets/favicon.png?raw=true" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/kavience/willow-component-template/master/public/assets/logo.png?raw=true" /></p>
 <h1 align="center">willow-component-tool</h1>
 
 ## Introduction
